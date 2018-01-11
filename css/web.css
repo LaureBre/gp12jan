@@ -1,0 +1,316 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid grey; */
+}
+
+/* CONTENEURS GLOBAUX */
+body
+{
+    width: 1920px;
+    margin: auto;
+    font-family: 'segoeuil';
+}
+
+article, section, #menu_bas, #menu_haut, #hero, #contact, #portfolio, #services
+{
+    padding-left: 375px;
+    padding-right: 375px;
+}
+
+/* FONTS */
+@font-face
+{
+    font-family: 'segoeui';
+    src: url('segoeui.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'segoeuil';
+    src: url('segoeuil.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'segoeuib';
+    src: url('segoeuib.ttf') format('truetype');
+}
+
+/* HAUTEURS & FONDS + COULEUR */
+#menu_haut
+{
+    height: 150px;
+    background-color: rgba(53,63,70,0.85);
+}
+
+#menu_haut *
+{
+    line-height: 150px;
+}
+
+#hero
+{
+    height: 650px;
+}
+
+/* FONDS PHOTOS */
+*[id^="fond"]
+{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    opacity: 0.9;
+}
+
+#fond_header
+{
+    top:0;
+    height: 800px;
+    background-image: url("../img/hero.png");
+    filter: sepia(100%) hue-rotate(160deg) saturate(80%);
+    background-size: cover;
+}
+
+#fond_who
+{
+    background-image: url("../img/who_is.png");
+    height: 505px;
+    background-size: auto;
+    background-position: 0px -435px;
+    filter: sepia(50%) hue-rotate(160deg) brightness(70%) saturate(150%);
+}
+
+header
+{
+    color: white;
+}
+
+#services
+{
+    height: 405px;
+}
+
+#portfolio
+{
+    height:845px;
+}
+
+#video
+{
+    height:475px;
+    background-color: rgb(81, 95, 103);
+    display: flex;
+    align-items: center;
+}
+
+#twitter
+{
+    height:305px;
+}
+
+#who-is
+{
+    height:505px;
+}
+
+#temoin
+{
+    height:360px;
+}
+
+#contact
+{
+    height:814px;
+}
+
+#formpart1
+{
+    column-count: 2;
+}
+
+#formpart1 *
+{
+    width: 50%;
+}
+
+ textarea
+ {
+     height: 220px;
+ }
+
+#menu_bas
+{
+    height:170px;
+    background-color: rgb(53,63,70);
+}
+
+/* MISE EN FORME CARACTERES */
+h1
+{
+    font-size: 30px;
+    font-family: 'segoeuib';
+}
+
+em
+{
+    font-style: normal;
+    color: #4bcaff;
+}
+
+h2
+{
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+ul
+{
+    font-size: 14px;
+    font-family: "segoeuib";
+    height: 40px;
+}
+
+li
+{
+  height: 40px;
+  padding: 10px;
+  margin: 40px 13px;
+}
+
+#menu_haut li:first-child, #menu_portfolio li:first-child
+{
+    color: #4bcaff;
+    border: 2px solid #4bcaff;
+}
+
+/* SECTIONS : twitter et temoin*/
+section p
+{
+
+}
+
+/*icone*/
+section img
+{
+
+}
+/* ARTICLES : video et who-is*/
+article
+{
+    color: white;
+}
+
+/* MENUS */
+nav
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+*[id^="menu_"] *
+{
+    display: inline-block;
+}
+  /* [attr^="valeur"] // attribut qui commence par "valeur"
+     [attr$="valeur"] // attribut qui se termine par "valeur"
+     [attr*="valeur"] // attribut qui contient "valeur" */
+
+*[id^="menu_"] li
+{
+    display: initial;
+}
+
+/* HEADER */
+#hero
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hero p
+{
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    margin: 5px;
+}
+
+#hero span
+{
+  background-color: rgba(53,63,70,0.6);
+  background-size: 80px auto;
+}
+
+.trois
+{
+    border-bottom: 2px solid white;
+}
+
+
+
+/* ARTICLE VIDEO */
+
+#video p
+{
+    font-size: 15px;
+}
+
+#video-g
+{
+    padding: 7px 90px 7px 0;
+    margin: 25px 0px 25px 0;
+}
+
+#video-g h2
+{
+    padding-bottom: 10px;
+}
+
+#video-g p
+{
+    padding-bottom: 32px;
+
+}
+
+#video-g input
+{
+    padding-bottom: 38px;
+}
+
+#video input
+{
+    width: 120px;
+    height: 50px;
+    border-bottom: 2px solid black;
+    background-color: rgba(0, 0, 0, 0);
+    color:black;
+}
+
+#menu_bas li, #menu_bas p
+{
+    line-height: 170px;
+    color: #515f67;
+    margin:0;
+    padding: 7px;
+    font-size: 80%;
+}
+
+#photos img
+{
+    height: 270px;
+    width: 270px;
+}
+
+#photos
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 600px;
+}
