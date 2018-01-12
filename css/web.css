@@ -63,7 +63,7 @@ article, section, #menu_bas, #menu_haut, #hero, #contact, #portfolio, #services
     z-index: -1;
     background-position: center;
     background-repeat: no-repeat;
-    filter: grayscale(100%);
+    filter: grayscale(100%) brightness(80%);
     opacity: 0.9;
 }
 
@@ -71,6 +71,7 @@ article, section, #menu_bas, #menu_haut, #hero, #contact, #portfolio, #services
 {
     top:0;
     height: 800px;
+    width: 1920px;
     background-image: url("../img/hero.png");
     filter: sepia(100%) hue-rotate(160deg) saturate(80%);
     background-size: cover;
@@ -82,7 +83,8 @@ article, section, #menu_bas, #menu_haut, #hero, #contact, #portfolio, #services
     height: 505px;
     background-size: auto;
     background-position: 0px -435px;
-    filter: sepia(50%) hue-rotate(160deg) brightness(70%) saturate(150%);
+    /* filter: sepia(20%) hue-rotate(160deg) brightness(80%) saturate(50%); */
+    filter: grayscale(100%) brightness(60%);
 }
 
 header
@@ -120,16 +122,20 @@ header
 #twitter
 {
     height:305px;
+    background-color: #4bcaff;
+    color: white;
 }
 
 #who-is
 {
     height:505px;
+    background-color: rgba(25, 92, 135, 0.2)
 }
 
 #temoin
 {
     height:360px;
+    color: #515f67;
 }
 
 #contact
@@ -195,7 +201,6 @@ li
 {
   height: 40px;
   padding: 10px;
-  margin: 40px 13px;
 }
 
 #menu_haut li:first-child, #menu_portfolio li:first-child
@@ -207,19 +212,36 @@ li
 /* SECTIONS : twitter et temoin*/
 section p
 {
+    font-size: 28px;
+    line-height: 50px;
+}
 
+b
+{
+    font-family: "segoeui";
+    font-size: 26px;
 }
 
 /*icone*/
+/* pour éviter qu'elle ne soit étirée en hauteur */
 section img
 {
-
+    align-self: flex-start;
 }
 
 /* ARTICLES : video et who-is*/
 article
 {
     color: white;
+}
+
+article p
+{
+    padding-bottom: 20px;
+    padding-right: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
 }
 
 /* MENUS */
@@ -271,6 +293,11 @@ nav
     border-bottom: 2px solid white;
 }
 
+#portfolio .trois, #temoin .trois
+{
+    border-color: #515f67;
+}
+
 /* -------------SERVICES----------------- */
 #cont_services
 {
@@ -310,23 +337,48 @@ nav
 #video-g p
 {
     padding-bottom: 32px;
-
-}
-
-#video-g input
-{
-    padding-bottom: 38px;
 }
 
 #video input
 {
-    width: 120px;
+    width: 150px;
     height: 50px;
     border: 2px solid #353f46;
     background-color: rgba(0, 0, 0, 0);
-    color: #353f46;;
+    padding: 5px
+    color: #353f46;
+    font-family: "segoeuib";
+    font-size: 14px;
 }
 
+/* -------------WHO IS------------- */
+#sociaux, #div2_who
+{
+  width: 1170px;
+  /* Mais pourquoi toute la largeur ?!!! Plus logique de noter la moitié... */
+}
+
+#sociaux
+{
+    display: flex;
+}
+
+.social
+{
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    text-align: center;
+    margin: 10px;
+}
+.social img
+{
+    padding-top: 33%;
+    /* solution bâtarde dont je ne suis pas contente, */
+    /* sinon il faudrait utiliser un float en position absolute ? */
+}
+
+/* ----------MENUS DE PAGE-------- */
 #menu_bas li, #menu_bas p
 {
     line-height: 170px;
@@ -336,6 +388,7 @@ nav
     font-size: 80%;
 }
 
+/* ---------PORTFOLIO------------ */
 #photos img
 {
     height: 270px;
@@ -348,4 +401,28 @@ nav
     justify-content: space-between;
     flex-wrap: wrap;
     height: 600px;
+}
+
+/* -------------TEMOIN---------- */
+
+.auteur
+{
+    color: #4bcaff;
+    font-size: 13px;
+    font-family: "segoeuib";
+}
+
+/* ----------alignements---------- */
+.repart_v
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.repart_h
+{
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
 }

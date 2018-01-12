@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Site web 10 janvier</title>
+    <title>BluEasy templater</title>
     <link rel="stylesheet" href="css/web.css" />
 </head>
 
@@ -13,7 +13,7 @@
 <!-- HEADER -->
     <header>
         <!-- MENU DU HAUT -->
-        <nav id="menu_haut">
+        <nav id="menu_haut" class="repart_h">
             <h1>BLU<em>E</em>ASY</h1>
                 <ul>
                     <li>HOME</li>
@@ -25,7 +25,7 @@
         </nav>
 
         <!-- DIV HERO : IMAGE ET TITRE -->
-        <div id="hero">
+        <div id="hero" class="repart_h">
                 <p><span>"I'M LOOKING FOR THE UNEXPECTED.</span></p>
                 <p><span>I'M LOOKING FOR THINGS I'VE NEVER SEEN BEFORE."</span></p>
         </div>
@@ -36,7 +36,7 @@
     </header>
 
 <!-- SOUS-MENU 4 SERVICES -->
-    <div id="services">
+    <div id="services" class="repart_h">
         <h2><span class="trois">SER</span>VICES</h2>
 
         <div id="cont_services">
@@ -69,9 +69,9 @@
 <!-- PORTFOLIO -->
     <div id="portfolio">
 
-        <nav id="menu_portfolio">
+        <nav id="menu_portfolio" class="repart_h">
 
-           <h2><span class="trois"><span class="trois">POR</span>TFOLIO</h2>
+           <h2><span class="trois">POR</span>TFOLIO</h2>
                <ul>
                   <li>ALL</li>
                   <li>PANORAMAS</li>
@@ -81,7 +81,7 @@
                </ul>
         </nav>
 
-        <div id="photos">
+        <div id="photos" class="repart_h">
             <img src="img/portfolio_photo.png">
             <img src="img/portfolio_photo1.png">
             <img src="img/portfolio_photo2.png">
@@ -94,8 +94,8 @@
 
     </div>
 
-<!-- ARTCLE VIDEO -->
-    <article id="video">
+<!-- ARTICLE VIDEO -->
+    <article id="video" class="repart_h">
         <div id="video-g">
             <h2><span class="trois">JUS</span>T DEFAULT SECTION</h2>
                 <p>
@@ -112,50 +112,62 @@
     </article>
 
 <!-- SECTION TWITTER -->
-    <section id="twitter">
-        <h2><span class="trois">TWI</span>TTER</h2>
+    <section id="twitter" class="repart_v">
+        <div class="repart_h">
+            <h2><span class="trois">TWI</span>TTER</h2>
             <img class="icone" src="img/twitter.png">
-            <p>Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate oat cake <b>@cheesecake</b> tootsie roll.</p>
+        </div>
+            <p>Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate oat cake <br>
+               <b>@cheesecake</b> tootsie roll.</p>
     </section>
 
 <!-- FOCUS : WHO IS -->
     <!-- BACKGROUND -->
     <div id="fond_who"></div>
 
-<article id="who-is">
+<article id="who-is" class="repart_v">
 
           <h2><span class="trois">WHO</span> IS JOHN DOE?</h2>
-              <p>
-                Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream wafer gummies cheesecake brownie.
-              </p>
-              <p>
-                Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I love pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat cake bonbon I love candy canes toffee.
-              </p>
-              <p>
-                Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake. Sesame snaps sugar plum cotton candy chocolate bonbon lemon drops candy canes cotton candy. Cake toffee pie bear claw pastry.
-              </p>
-              <div id="sociaux">
-                  <img class="icone" src="img/twit.png">
-                  <img class="icone" src="img/googleplus.png">
-                  <img class="icone" src="img/ball.png">
-                  <img class="icone" src="img/cup.png">
-              </div>
+            <div class="repart_h">
+                <p>
+                  Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream wafer gummies cheesecake brownie.
+                </p>
+                <p>
+                  Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I love pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat cake bonbon I love candy canes toffee.
+                </p>
+            </div>
+            <div class="repart_h" id="div2_who">
+                <p>
+                  Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake. Sesame snaps sugar plum cotton candy chocolate bonbon lemon drops candy canes cotton candy. Cake toffee pie bear claw pastry.
+                </p>
+                <div id="sociaux">
+                    <div class="social"><img class="icone" src="img/twit.png"></div>
+                    <div class="social"><img class="icone" src="img/googleplus.png"></div>
+                    <div class="social"><img class="icone" src="img/ball.png"></div>
+                    <div class="social"><img class="icone" src="img/cup.png"></div>
+                </div>
+            </div>
     </article>
 
 <!-- TEMOIGNAGE -->
-    <section id="temoin">
-        <h2><span class="trois">TES</span>TIMONIALS</h2>
+    <section id="temoin" class="repart_v">
+        <div class="repart_h">
+            <h2><span class="trois">TES</span>TIMONIALS</h2>
             <img class="icone" src="img/quotes.png">
+        </div>
             <p>
               Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.
             </p>
             <p class="auteur">-Walter White</p>
     </section>
 
-<!-- CONTACT -->
-    <div id="contact">
-      <!-- BACKGROUND -->
-      <div id="fond_contact"></div>
+
+  <!-- CONTACT -->
+
+    <!-- BACKGROUND -->
+    <div id="fond_contact"></div>
+
+    <div id="contact" class="repart_v">
 
         <h2><span class="trois">CON</span>TACT</h2>
           <form>
@@ -182,7 +194,7 @@
     </div>
 
 <!-- MENU BAS -->
-    <nav id="menu_bas">
+    <nav id="menu_bas" class="repart_h">
             <ul>
               <li>HOME</li>
                 <li>|</li>
