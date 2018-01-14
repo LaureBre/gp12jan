@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BluEasy templater</title>
+    <title>BluEasy template</title>
     <link rel="stylesheet" href="css/web.css" />
 </head>
 
@@ -171,25 +171,34 @@
 
         <h2><span class="trois">CON</span>TACT</h2>
           <form>
-              <div id="formpart1">
-                  <label for="nom"></label>
-                  <input type="text" id="nom">
-                  <label for="email"></label>
-                  <input type="email" id="email">
-                  <p>
-                    Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.
-                  </p>
-                  <p>
-                    Linda Newman<br>
-                    W325 State Road 123<br>
-                    Mondovi, WI(Wisconsin) 98746-54321<br>
-                    (715) 946 - 1234.
-                  </p>
-              </div>
-
-              <label for="message"></label>
-              <textarea id="message"></textarea><br>
-              <input type="button" value="MESSAGE">
+            <div class="repart_h">
+                  <div id="formpart1">
+                    <div>
+                      <label for="nom">FULL NAME</label><br>
+                      <input type="text" id="nom"><br>
+                    </div>
+                    <div>
+                      <label for="email">EMAIL</label><br>
+                      <input type="email" id="email">
+                    </div>
+                  </div>
+                  <div id="formpart2">
+                      <p><br>
+                        Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.
+                      </p>
+                      <p>
+                        Linda Newman<br>
+                        W325 State Road 123<br>
+                        Mondovi, WI(Wisconsin) 98746-54321<br>
+                        (715) 946 - 1234.
+                      </p>
+                  </div>
+            </div>
+            <div id="formpart3">
+                      <label for="message">MESSAGE</label>
+                      <textarea id="message"></textarea><br>
+                      <input type="button" value="MESSAGE">
+            </div>
           </form>
     </div>
 
@@ -199,6 +208,8 @@
               <li>HOME</li>
                 <li>|</li>
               <li>SERVICES</li>
+                <li>|</li>
+              <li>FEATURES</li>
                 <li>|</li>
               <li>PORTFOLIA</li>
                 <li>|</li>

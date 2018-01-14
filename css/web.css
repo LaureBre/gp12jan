@@ -87,6 +87,15 @@ article, section, #menu_bas, #menu_haut, #hero, #contact, #portfolio, #services
     filter: grayscale(100%) brightness(60%);
 }
 
+#fond_contact
+{
+    background-image: url("../img/layer1.png");
+    height: 810px;
+    background-size: auto;
+    filter: grayscale (100%) hue-rotate(180deg) sepia(60%) saturate(200%) brightness(60%);
+    background-position: 0 -400px;
+}
+
 header
 {
     color: white;
@@ -129,7 +138,7 @@ header
 #who-is
 {
     height:505px;
-    background-color: rgba(25, 92, 135, 0.2)
+    background-color: rgba(25, 92, 135, 0.2);
 }
 
 #temoin
@@ -141,22 +150,10 @@ header
 #contact
 {
     height:814px;
+    color: white;
+    background-color: rgba(10, 52, 75, 0.4)
 }
 
-#formpart1
-{
-    column-count: 2;
-}
-
-#formpart1 *
-{
-    width: 50%;
-}
-
- textarea
- {
-     height: 220px;
- }
 
 #menu_bas
 {
@@ -203,7 +200,9 @@ li
   padding: 10px;
 }
 
-#menu_haut li:first-child, #menu_portfolio li:first-child
+#menu_haut li:first-child, #menu_portfolio li:first-child,
+#menu_haut li:hover, #menu_portfolio li:hover,
+#video input:hover
 {
     color: #4bcaff;
     border: 2px solid #4bcaff;
@@ -235,7 +234,7 @@ article
     color: white;
 }
 
-article p
+article p, #contact p /*contact aussi a des paragraphes comme ça*/
 {
     padding-bottom: 20px;
     padding-right: 50px;
@@ -244,7 +243,7 @@ article p
     line-height: 22px;
 }
 
-/* MENUS */
+/* -------------MENUS------------- */
 nav
 {
     display: flex;
@@ -265,6 +264,16 @@ nav
     display: initial;
 }
 
+
+/* ----------menus haut / bas-------- */
+#menu_bas li, #menu_bas p
+{
+  line-height: 170px;
+  color: #515f67;
+  margin:0;
+  padding: 7px;
+  font-size: 80%;
+}
 
 /* ------------HEADER---------------- */
 #hero
@@ -316,8 +325,8 @@ nav
     font-size: 12px;
     font-weight: 500;
 }
-/* -----------ARTICLE VIDEO-------------- */
 
+/* -----------ARTICLE VIDEO-------------- */
 #video p
 {
     font-size: 15px;
@@ -378,16 +387,6 @@ nav
     /* sinon il faudrait utiliser un float en position absolute ? */
 }
 
-/* ----------MENUS DE PAGE-------- */
-#menu_bas li, #menu_bas p
-{
-    line-height: 170px;
-    color: #515f67;
-    margin:0;
-    padding: 7px;
-    font-size: 80%;
-}
-
 /* ---------PORTFOLIO------------ */
 #photos img
 {
@@ -404,12 +403,58 @@ nav
 }
 
 /* -------------TEMOIN---------- */
-
 .auteur
 {
     color: #4bcaff;
     font-size: 13px;
     font-family: "segoeuib";
+}
+
+/* ------------CONTACT----------- */
+#formpart1 input
+{
+    width: 470px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#formpart2
+{
+    width: 585px;
+}
+
+textarea
+{
+    height: 220px;
+    width: 1170px;
+}
+
+#formpart1 input, textarea
+{
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+#formpart3 input
+{
+    margin-top: 36px;
+    width: 370px;
+    height: 58px;
+    border: none;
+    background-color: #4bcaff;
+    color: white;
+}
+
+label, #formpart3 input
+{
+    font-family: "segoeuib";
+}
+
+/* ----------MENU BAS------------ */
+#menu_bas li:hover
+{
+    color: #4bcaff;
 }
 
 /* ----------alignements---------- */
